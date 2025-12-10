@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/paper_beige">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mini Vision Board"
+        android:textStyle="bold"
+        android:textColor="@color/text_brown"
+        android:textSize="20sp"
+        android:paddingBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etVisionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título"
+        android:background="@drawable/bg_card"
+        android:padding="12dp"
+        android:textColor="@color/text_brown"
+        android:textColorHint="@color/text_brown" />
+
+    <EditText
+        android:id="@+id/etVisionDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:background="@drawable/bg_card"
+        android:padding="12dp"
+        android:textColor="@color/text_brown"
+        android:textColorHint="@color/text_brown"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnAddVision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_button"
+        android:textColor="@color/text_brown" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvVision"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:paddingBottom="8dp" />
+
+</LinearLayout>

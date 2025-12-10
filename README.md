@@ -8,7 +8,7 @@ Este repositorio omite el archivo binario `gradle/wrapper/gradle-wrapper.jar` po
 2. Generá nuevamente el wrapper con la versión configurada del proyecto:
 
    ```bash
-   gradle wrapper --gradle-version 8.14.3 --distribution-type=bin
+   gradle wrapper --gradle-version 8.4 --distribution-type=bin
    ```
 
    Esto descargará el `gradle-wrapper.jar` faltante.
