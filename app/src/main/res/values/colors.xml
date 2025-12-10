@@ -1,0 +1,9 @@
+<resources>
+    <color name="paper_beige">#F5EBDD</color>
+    <color name="text_brown">#4A3B32</color>
+    <color name="soft_green">#A1B59F</color>
+    <color name="soft_rose">#B98A94</color>
+    <color name="soft_mustard">#D8B278</color>
+    <color name="accent_terracotta">#C48A6A</color>
+    <color name="ic_launcher_background">#F5EBDD</color>
+</resources>

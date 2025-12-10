@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Respira" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/soft_green</item>
+        <item name="colorPrimaryVariant">@color/soft_rose</item>
+        <item name="colorOnPrimary">@color/text_brown</item>
+        <item name="colorSecondary">@color/soft_mustard</item>
+        <item name="colorOnSecondary">@color/text_brown</item>
+        <item name="android:windowBackground">@color/paper_beige</item>
+        <item name="android:statusBarColor">@color/soft_green</item>
+        <item name="android:navigationBarColor">@color/paper_beige</item>
+        <item name="materialButtonStyle">@style/RespiraButton</item>
+        <item name="android:textColor">@color/text_brown</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="RespiraCard">
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="RespiraButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:textColor">@color/text_brown</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+</resources>
