@@ -19,3 +19,7 @@ Este repositorio omite el archivo binario `gradle/wrapper/gradle-wrapper.jar` po
    ```
 
 Si preferís no instalar Gradle globalmente, abrí el proyecto en Android Studio y ejecutá *Gradle Wrapper* desde la ventana de Gradle; Android Studio descargará el jar automáticamente.
+
+## Versión de Kotlin
+
+El proyecto está fijado en Kotlin **1.9.22** para garantizar compatibilidad con Room 2.5.2. Si Android Studio sugiere actualizar a Kotlin 2.x, rechazá la actualización para evitar errores de KAPT relacionados con la versión de metadata.
