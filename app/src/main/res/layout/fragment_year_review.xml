@@ -1,0 +1,203 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="@color/paper_beige">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mi Año"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/text_brown"
+            android:paddingBottom="8dp" />
+
+        <!-- Timeline events -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Línea de tiempo emocional"
+                android:textStyle="bold"
+                android:textColor="@color/text_brown"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etEventTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Título"
+                android:background="@drawable/bg_card"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/etEventDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripción"
+                android:background="@drawable/bg_card"
+                android:padding="8dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/etEventEmotion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Emoción principal"
+                android:background="@drawable/bg_card"
+                android:padding="8dp"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnAddEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar evento"
+                android:layout_marginTop="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Frequent emotions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emociones frecuentes"
+                android:textStyle="bold"
+                android:textColor="@color/text_brown"
+                android:paddingBottom="8dp" />
+
+            <LinearLayout
+                android:id="@+id/chipContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <EditText
+                android:id="@+id/etVersionLeave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="¿Qué versión mía necesito dejar atrás?"
+                android:background="@drawable/bg_card"
+                android:padding="8dp"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnSaveEmotions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar emociones"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Life wheel -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rueda de la vida emocional"
+                android:textStyle="bold"
+                android:textColor="@color/text_brown"
+                android:paddingBottom="8dp" />
+
+            <include layout="@layout/item_life_wheel" />
+
+            <Button
+                android:id="@+id/btnSaveWheel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar rueda"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tvWheelSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_brown"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+
+        <!-- Inner resources -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recursos internos"
+                android:textStyle="bold"
+                android:textColor="@color/text_brown"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etHeldMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="¿Qué me sostuvo este año?"
+                android:background="@drawable/bg_card"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/etQuality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="¿Qué cualidad apareció cuando la necesité?"
+                android:background="@drawable/bg_card"
+                android:padding="8dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/etDiscovery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="¿Qué descubrí de mí?"
+                android:background="@drawable/bg_card"
+                android:padding="8dp"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnSaveResources"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

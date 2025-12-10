@@ -1,0 +1,224 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="@color/paper_beige">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visión y Metas"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/text_brown"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Palabra guía"
+                android:textStyle="bold"
+                android:textColor="@color/text_brown"
+                android:paddingBottom="4dp" />
+
+            <EditText
+                android:id="@+id/etGuideWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mi palabra para este año es..."
+                android:background="@drawable/bg_card"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/etGuideReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Porque me recuerda que..."
+                android:background="@drawable/bg_card"
+                android:padding="8dp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intenciones para el año"
+                android:textStyle="bold"
+                android:textColor="@color/text_brown"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etEmotions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="¿Qué emociones quiero sentir más este año?"
+                android:background="@drawable/bg_card"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/etDreams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="¿Qué sueños me hacen sentir emocionada?"
+                android:background="@drawable/bg_card"
+                android:padding="8dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/etAreas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="¿Qué áreas de mi vida quiero mejorar o mantener igual?"
+                android:background="@drawable/bg_card"
+                android:padding="8dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/etStop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="¿Qué quiero dejar de normalizar?"
+                android:background="@drawable/bg_card"
+                android:padding="8dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/etCultivate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="¿Qué quiero cultivar?"
+                android:background="@drawable/bg_card"
+                android:padding="8dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/etLearn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="¿Qué quiero aprender emocionalmente?"
+                android:background="@drawable/bg_card"
+                android:padding="8dp"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnSaveIntentions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar intenciones"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Metas realistas"
+                android:textStyle="bold"
+                android:textColor="@color/text_brown"
+                android:paddingBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/goal_categories" />
+
+            <EditText
+                android:id="@+id/etGoalDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escribí una meta"
+                android:background="@drawable/bg_card"
+                android:padding="8dp"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnAddGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar meta"
+                android:layout_marginTop="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvGoals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mini Vision Board"
+                android:textStyle="bold"
+                android:textColor="@color/text_brown"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etVisionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Título de la tarjeta"
+                android:background="@drawable/bg_card"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/etVisionDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripción"
+                android:background="@drawable/bg_card"
+                android:padding="8dp"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnAddVision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar tarjeta"
+                android:layout_marginTop="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvVision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
