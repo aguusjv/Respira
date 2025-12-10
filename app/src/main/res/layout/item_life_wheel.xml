@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="4dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Salud física/mental" android:textColor="@color/text_brown" />
+        <SeekBar android:id="@+id/seekHealth" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="9" android:progress="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="4dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dinero" android:textColor="@color/text_brown" />
+        <SeekBar android:id="@+id/seekMoney" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="9" android:progress="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="4dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Desarrollo personal" android:textColor="@color/text_brown" />
+        <SeekBar android:id="@+id/seekPersonal" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="9" android:progress="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="4dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Espiritualidad" android:textColor="@color/text_brown" />
+        <SeekBar android:id="@+id/seekSpiritual" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="9" android:progress="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="4dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Social/Amistades" android:textColor="@color/text_brown" />
+        <SeekBar android:id="@+id/seekSocial" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="9" android:progress="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="4dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Familia/Amor" android:textColor="@color/text_brown" />
+        <SeekBar android:id="@+id/seekFamily" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="9" android:progress="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="4dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ocio" android:textColor="@color/text_brown" />
+        <SeekBar android:id="@+id/seekLeisure" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="9" android:progress="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="4dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trabajo/Emprendimiento" android:textColor="@color/text_brown" />
+        <SeekBar android:id="@+id/seekWork" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="9" android:progress="4" />
+    </LinearLayout>
+</LinearLayout>
