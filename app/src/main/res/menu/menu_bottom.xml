@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_today"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Hoy" />
+    <item
+        android:id="@+id/nav_year"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Mi Año" />
+    <item
+        android:id="@+id/nav_intentions"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Visión" />
+    <item
+        android:id="@+id/nav_tools"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Herramientas" />
+</menu>

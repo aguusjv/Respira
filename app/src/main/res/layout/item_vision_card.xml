@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/bg_card"
+    android:layout_margin="4dp">
+
+    <TextView
+        android:id="@+id/tvVisionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/text_brown"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvVisionDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_brown"
+        android:paddingTop="4dp" />
+</LinearLayout>

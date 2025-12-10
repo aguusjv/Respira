@@ -1,0 +1,110 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/paper_beige">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoy"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_brown"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Cómo te sentís hoy?"
+                android:textColor="@color/text_brown"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/rgMood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/mood1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Muy mal" />
+                <RadioButton android:id="@+id/mood2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Mal" />
+                <RadioButton android:id="@+id/mood3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Neutral" />
+                <RadioButton android:id="@+id/mood4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Bien" />
+                <RadioButton android:id="@+id/mood5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Muy bien" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Si querés, escribí algo sobre cómo estás hoy…"
+            android:background="@drawable/bg_card"
+            android:minHeight="120dp"
+            android:gravity="top"
+            android:padding="12dp"
+            android:layout_margin="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Micro-acción del día"
+                android:textStyle="bold"
+                android:textColor="@color/text_brown"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elegí una acción pequeña que represente la versión que querés construir hoy."
+                android:textColor="@color/text_brown"
+                android:paddingBottom="4dp" />
+
+            <EditText
+                android:id="@+id/etMicroAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escribí tu micro-acción"
+                android:background="@drawable/bg_card"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar día"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver historial"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/text_brown" />
+    </LinearLayout>
+</ScrollView>

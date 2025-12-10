@@ -1,0 +1,159 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="@color/paper_beige">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Herramientas"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/text_brown"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Respiración 4-6"
+                android:textStyle="bold"
+                android:textColor="@color/text_brown"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inhalá 4 segundos, exhalá 6. Ayuda a activar el sistema parasimpático y bajar la ansiedad."
+                android:textColor="@color/text_brown"
+                android:paddingBottom="12dp" />
+
+            <View
+                android:id="@+id/breathCircle"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/breath_circle" />
+
+            <TextView
+                android:id="@+id/tvBreathState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listo"
+                android:textColor="@color/text_brown"
+                android:paddingTop="8dp" />
+
+            <Button
+                android:id="@+id/btnStartBreath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Empezar"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnStopBreath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finalizar"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Journaling breve"
+                android:textStyle="bold"
+                android:textColor="@color/text_brown"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Escribir 3 minutos sin parar para liberar tensión y ordenar ideas."
+                android:textColor="@color/text_brown"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etJournal"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="top"
+                android:background="@drawable/bg_card"
+                android:hint="Escribí tu nota"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnSaveJournal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar nota"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grounding 5-4-3-2-1"
+                android:textStyle="bold"
+                android:textColor="@color/text_brown"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Observá 5 cosas que ves, 4 que podés tocar, 3 que escuchás, 2 que olés y 1 que saboreás."
+                android:textColor="@color/text_brown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pausa de autocompasión"
+                android:textStyle="bold"
+                android:textColor="@color/text_brown"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reconocé lo que sentís, validá tu experiencia y decite una frase amable como si hablaras con una amiga."
+                android:textColor="@color/text_brown" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

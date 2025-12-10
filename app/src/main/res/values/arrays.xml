@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="goal_categories">
+        <item>Emocionales</item>
+        <item>Laborales / Académicas</item>
+        <item>Vinculares</item>
+        <item>Personales</item>
+    </string-array>
+</resources>

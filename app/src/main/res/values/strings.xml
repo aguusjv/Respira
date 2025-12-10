@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Respirá – Mi Año Consciente</string>
+    <string name="onboarding_start">Empezar</string>
+    <string name="today">Hoy</string>
+    <string name="year_review">Mi Año</string>
+    <string name="intentions_goals">Visión / Metas</string>
+    <string name="tools">Herramientas</string>
+    <string name="wheel_summary_format">Salud %1$d, Dinero %2$d, Desarrollo %3$d, Espiritualidad %4$d, Social %5$d, Familia %6$d, Ocio %7$d, Trabajo %8$d</string>
+</resources>
